@@ -64,9 +64,6 @@ if st.button("Predict Estimated Sales", type="primary"):
         except Exception as e:
             st.error(f"An error occurred during prediction: {e}")
 
-st.markdown("---")
-st.caption("Note: This app uses a mocked Linear Regression model for demonstration.")
-
 # Display model coefficients if the model is loaded successfully
 if 'loaded_model' in locals():
     st.sidebar.subheader("Model Coefficients")
